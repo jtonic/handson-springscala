@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, Rest
 class KeepAliveController {
 
   @GetMapping
-  def keepAlive = "KEEP_ALIVE"
+  def keepAlive = {
+    Person(name = "Antonel", hair = "brown")
+    "KEEP_ALIVE"
+  }
 
 }
