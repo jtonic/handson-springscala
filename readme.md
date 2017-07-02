@@ -1,11 +1,16 @@
 #### Spring boot project developed in scala
 
 - REST resources
-- Autowired, DI
+- [V] Autowired, DI
 - ScalaTest, ScalaCheck, ScalaMock based unit and integration testing
-- Services
-- Spring data repositories
-- application.json
+- [V] Services
+- [V] Spring data repositories
+- [V] application.yaml
+- simple thymeleaf UI example
+- simple thymeleaf non-UI template example
+- security
+- cache
+- 
 
 - Microservices and cloud
     - netflix ribbon

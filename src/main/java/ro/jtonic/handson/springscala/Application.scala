@@ -1,9 +1,6 @@
 package ro.jtonic.handson.springscala
 
-import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.{CommandLineRunner, SpringApplication}
-import org.springframework.context.annotation.Bean
-
+import org.springframework.boot.SpringApplication
 
 /**
   * Created by Antonel Ernest Pazargic on 26/06/2017.
@@ -11,18 +8,8 @@ import org.springframework.context.annotation.Bean
   * @author Antonel Ernest Pazargic
   */
 object Application extends App {
-    SpringApplication.run(classOf[Config])
+    SpringApplication.run(classOf[ApplicationConfig])
 }
 
 
-@SpringBootApplication
-class Config {
-
-  @Bean
-  def commandLineRunner: CommandLineRunner =
-    new CommandLineRunner {
-      override def run(args: String*): Unit = println("The application has been started.")
-    }
-
-}
 
