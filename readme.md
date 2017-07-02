@@ -8,9 +8,13 @@
 - [V] application.yaml
 - simple thymeleaf UI example
 - simple thymeleaf non-UI template example
-- security
+- sprint security
 - cache
-- 
+- web components
+- polymer
+- SPA
+- https for spring boot with embedded tomcat.
+- deployment of spring boot to TC Server from Pivotal
 
 - Microservices and cloud
     - netflix ribbon
