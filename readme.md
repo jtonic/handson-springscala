@@ -15,6 +15,8 @@
 - SPA
 - https for spring boot with embedded tomcat.
 - deployment of spring boot to TC Server from Pivotal
+- integration testing with gauge
+- CI with Jackson
 
 - Microservices and cloud
     - netflix ribbon
