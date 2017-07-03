@@ -2,6 +2,8 @@
 
 - REST resources
 - [V] Autowired, DI
+- HTTPS (SSL/TLS)
+- whitelisting
 - ScalaTest, ScalaCheck, ScalaMock based unit and integration testing
 - [V] Services
 - [V] Spring data repositories
@@ -9,6 +11,7 @@
 - simple thymeleaf UI example
 - simple thymeleaf non-UI template example
 - sprint security
+- OAuth2
 - cache
 - web components
 - polymer
