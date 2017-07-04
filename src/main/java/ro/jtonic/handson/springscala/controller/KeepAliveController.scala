@@ -13,7 +13,6 @@ class KeepAliveController {
 
   @GetMapping
   def keepAlive = {
-    Person(name = "Antonel", hair = "brown")
     "KEEP_ALIVE"
   }
 
