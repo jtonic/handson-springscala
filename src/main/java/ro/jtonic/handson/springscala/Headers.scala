@@ -9,5 +9,5 @@ package ro.jtonic.handson.springscala
 object Headers extends Headers
 
 sealed trait Headers {
-  final val X_CLACKS_OVERHEAD = "X-Clacks-Overhead"
+  final val X_ACCESS_TOKEN = "X-AccessToken"
 }

@@ -1,6 +1,6 @@
 package ro.jtonic.handson.springscala.controller
 
-import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, RestController}
+import org.springframework.web.bind.annotation.{GetMapping, RestController}
 
 /**
   * Created by Antonel Ernest Pazargic on 26/06/2017.
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, Rest
   * @author Antonel Ernest Pazargic
   */
 @RestController
-@RequestMapping(path = Array("/keepalive"))
 class KeepAliveController {
 
-  @GetMapping
-  def keepAlive = {
-    "KEEP_ALIVE"
-  }
+  @GetMapping(path = Array("/keepalive"))
+  def keepAlive = "KEEP_ALIVE"
+
+  @GetMapping(path = Array("/greeting"))
+  def greeting = "Hello"
 
 }
