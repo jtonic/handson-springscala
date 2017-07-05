@@ -1,7 +1,7 @@
 package ro.jtonic.handson.springscala.model
 
-import javax.persistence._
 import java.lang.{Long => JLong}
+import javax.persistence.{Column, Entity, GeneratedValue, GenerationType, Id, Table}
 
 import scala.beans.BeanProperty
 

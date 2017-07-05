@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication
   * @author Antonel Ernest Pazargic
   */
 object Application extends App {
-    SpringApplication.run(classOf[ApplicationConfig])
+  SpringApplication.run(classOf[ApplicationConfig])
 }
 
 

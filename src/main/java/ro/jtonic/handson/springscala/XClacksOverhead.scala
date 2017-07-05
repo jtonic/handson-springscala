@@ -1,11 +1,10 @@
 package ro.jtonic.handson.springscala
 
-import javax.servlet._
+import javax.servlet.FilterChain
 import javax.servlet.http.{HttpServletRequest, HttpServletResponse}
 
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
-import ro.jtonic.handson.springscala.Headers._
 import org.springframework.util.AntPathMatcher
 
 @Component
@@ -16,7 +15,7 @@ class XClacksOverhead extends OncePerRequestFilter {
   val pathMatcher = new AntPathMatcher
 
   override def doFilterInternal(request: HttpServletRequest, response: HttpServletResponse, filterChain: FilterChain): Unit = {
-    response.setHeader(X_ACCESS_TOKEN, "ACCESS TOKEN ASDFK;AJSDFLASJDFADSF134123412ADASDFA")
+    response.setHeader(Headers.X_ACCESS_TOKEN, "ACCESS TOKEN ASDFK;AJSDFLASJDFADSF134123412ADASDFA")
   }
 
   override def shouldNotFilter(request: HttpServletRequest) =

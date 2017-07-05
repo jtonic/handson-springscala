@@ -1,10 +1,11 @@
 package ro.jtonic.handson.springscala
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean
+import org.springframework.context.annotation.{Bean, Configuration}
+
 import java.util
 import javax.servlet.DispatcherType
 
-import org.springframework.boot.web.servlet.FilterRegistrationBean
-import org.springframework.context.annotation.{Bean, Configuration}
 
 /**
   * Created by Antonel Ernest Pazargic on 04/07/2017.

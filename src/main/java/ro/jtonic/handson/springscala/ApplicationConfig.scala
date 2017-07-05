@@ -1,10 +1,12 @@
 package ro.jtonic.handson.springscala
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.context.annotation.Bean
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories
+import ro.jtonic.handson.springscala.service.LibraryService
 
 /**
   * Created by Antonel Ernest Pazargic on 02/07/2017.
@@ -15,9 +17,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 @EnableJpaRepositories(Array("ro.jtonic.handson.springscala.repo"))
 @EntityScan(Array("ro.jtonic.handson.springscala.model"))
 class ApplicationConfig {
-
-  import org.springframework.beans.factory.annotation.Autowired
-  import ro.jtonic.handson.springscala.service.LibraryService
 
   @Autowired
   private var libraryService: LibraryService = _
